@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/lettersText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/num_Letters"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/numText"
+        app:layout_constraintStart_toStartOf="@+id/numText" />
+
+    <TextView
+        android:id="@+id/numText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/num_Nums"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/numLetters"
+        android:layout_width="100dp"
+        android:layout_height="64dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lettersText"
+        app:layout_constraintEnd_toEndOf="@+id/numNums"
+        app:layout_constraintStart_toStartOf="@+id/numNums" />
+
+    <EditText
+        android:id="@+id/numNums"
+        android:layout_width="100dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/numText"
+        app:layout_constraintStart_toEndOf="@+id/numText" />
+
+    <Button
+        android:id="@+id/generateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/numSym"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/numNums"
+        app:layout_constraintTop_toTopOf="@+id/numLetters" />
+
+    <TextView
+        android:id="@+id/symText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/num_Symbols"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/numText"
+        app:layout_constraintTop_toBottomOf="@+id/numText" />
+
+    <EditText
+        android:id="@+id/numSym"
+        android:layout_width="100dp"
+        android:layout_height="64dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/symText"
+        app:layout_constraintEnd_toEndOf="@+id/numNums"
+        app:layout_constraintStart_toStartOf="@+id/numNums" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

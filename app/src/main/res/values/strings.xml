@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Random Password Generator</string>
+    <string name="num_Letters">How many letters?</string>
+    <string name="num_Nums">How many numbers?</string>
+    <string name="button">Generate Password</string>
+    <string name="num_Symbols">How many special symbols?</string>
+
+</resources>
